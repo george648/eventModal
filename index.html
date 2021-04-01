@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./attachment/css/style.css">
+</head>
+<body>
+
+    домашнее задание:
+
+кнопка Add доступна только в случае отсутствия ошибок под инпутами и заполненности инпутов. если есть хоть одна ошибка и один пустой инпут, то кнопка Add недоступна
+6) При закрытии окна инпуты должны очищаться
+7) если пользователь нажимает esc на клавиатуре - окно просто закрывается. если Enter, то должно произойти действие аналогичное клику по кнопке Add. Enter срабатывает только в случае отсутствия ошибок под инпутами и заполненности инпутов. если есть хоть одна ошибка и один пустой инпут, то при тапе на Enter ничего не происходит
+    <br>
+    <button id="open_window_btn">open window</button>
+
+    <div id="modal_window" class="hide modal_window">
+        <div class="input_item">
+            <label for="input_name">enter your name</label>
+            <input placeholder="Kirill" id="input_name" type="text">
+            <p id="error_message" class="error_message hide">Error! Enter correct data</p>            
+        </div>
+        <div class="input_item">
+            <label for="input_last_name">enter your last name</label>
+            <input placeholder="Northon" id="input_last_name" type="text">
+            <p id="error_message" class="error_message hide">Error! Enter correct data</p>
+        </div>
+        <div class="input_item">
+            <label for="input_age">enter your age</label>
+            <input placeholder="44" id="input_age" type="text">
+            <p id='error_message_number' class=" error_message hide"> Enter only numbers!</p>
+        </div>
+        <div class="button_block">
+            <button id="cancel_modal_window">Cancel</button>
+            <button id="add_user_data" disabled>Add</button>
+        </div>
+    </div>
+
+    
+
+
+    <script src="./attachment/js/script.js"></script>
+</body>
+</html>
